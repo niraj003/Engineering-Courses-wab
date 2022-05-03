@@ -1,0 +1,230 @@
+.container-01 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+	height: 100vh;
+	background: #ebf5fc;
+}
+.container-01 h2 {
+	position: relative;
+	width: 50%;
+	text-align: center;
+	z-index: 11;
+	color: #32a3b1;
+	font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 15px;
+	padding: 5px 8px;
+	font-size: 25px;
+	box-shadow: -6px -6px 20px rgba(255,255,255,1),
+				6px 6px 20px rgba(0,0,0,0.1);
+}
+.container-01 .neumorphic-card {
+	width: 320px;
+	height: 500px;
+	margin: 28px;
+	padding: 40px 30px;
+	background: #ebf5fc;
+	border-radius: 40px;
+	box-shadow: -6px -6px 20px rgba(255,255,255,1),
+				6px 6px 20px rgba(0,0,0,0.1);
+}
+.container-01 .neumorphic-card:hover {
+	box-shadow: inset -6px -6px 10px rgba(255,255,255,0.5),
+				inset 6px 6px 20px rgba(0,0,0,0.05);
+}
+.container-01 .neumorphic-card .imgBox {
+	position: relative;
+	text-align: center;
+}
+.container-01 .neumorphic-card .imgBox i {
+	font-size: max(80px);
+	color: #32a3b1;
+}
+.container-01 .neumorphic-card .contentBox {
+	position: relative;
+	margin-top: 20px;
+	text-align:center;	
+}
+.container-01 .neumorphic-card .contentBox h3 {
+	color: #32a3b1;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: 1.4em;
+}
+.container-01 .neumorphic-card .contentBox p {
+	color: #32a3b1;	
+}
+.container-01 .neumorphic-card .contentBox a {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 15px;
+	border-radius: 40px;
+	color: #32a3b1;
+	font-size: 16px;
+	text-decoration: none;
+	box-shadow: -4px -4px 15px rgba(255,255,255,1),
+				4px 4px 15px rgba(0,0,0,0.1);
+}
+.container-01 .neumorphic-card .contentBox a:hover {
+	box-shadow: inset-4px -4px 10px rgba(255,255,255,0.5),
+				inset 4px 4px 10px rgba(0,0,0,0.1);
+}
+.container-01 .neumorphic-card .contentBox a:hover span {
+	display: block;
+	transform: scale(0.98);	
+}
+.container-01 .neumorphic-card:hover .imgBox,
+.container-01 .neumorphic-card:hover .contentBox {
+	transform: scale(0.98);
+}
+.container-01 p {
+	z-index: 12;
+	margin: 20px auto 10px;
+	position: relative;
+	color: #32a3b1;
+}
+.container-01 p span {
+	font-weight: 700;
+}
+.container-02 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 50%;
+	background: #161616;
+}
+.container-02 h2 {
+	position: relative;
+	width: 50%;
+	text-align: center;
+	z-index: 11;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+	padding: 5px 8px;
+	font-size: 25px;
+	border-radius: 15px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	backdrop-filter: blur(5px);
+	border-left: 1px solid rgba(255,255,255,0.5);	
+	background: rgba(255,255,255,0.05);
+	
+}
+.container-02:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#f00, #f0F);
+	clip-path: circle(30% at  88% 77%);
+}
+.container-02:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#2196f3, #e91e63);
+	clip-path: circle(20% at 15% 15%);
+}
+.container-02 .glassmorphic-card {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	z-index: 1;
+	width: 320px;
+	height: 500px;
+	padding: 40px 30px;
+	margin: 28px;
+	box-shadow: 20px 20px 50px rgba(0,0,0, 0.5);
+	border-radius: 15px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+	background: rgba(255,255,255,0.1);
+	backdrop-filter: blur(5px);
+	overflow: hidden;
+}
+.container-02 .glassmorphic-card:before {
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	font-size: 10em;
+	background: rgba(255,255,255,0.05);
+	pointer-events: none;
+}
+.container-02 .glassmorphic-card .imgBox {
+	position: relative;
+	text-align: center;
+}
+.container-02 .glassmorphic-card .imgBox i {
+	font-size: max(80px);
+	color: rgba(255,255,255, 0.1);
+}
+.container-02 .glassmorphic-card .contentBox {
+	position: relative;
+	margin-top: 20px;
+	text-align:center;
+	transition: 0.5s;
+}
+.container-02 .glassmorphic-card .contentBox:before {
+	content: 'DIGITAL';
+    position: absolute;
+    top: -50px;
+    left: -125px;
+    width: 100%;
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transform: rotate(-90deg);
+    color: rgba(0,0,0,0.2);
+}
+.container-02 .glassmorphic-card .contentBox h3 {
+	font-size: 1.8em;
+	color: #fff;
+	z-index: 1;
+}
+.container-02 .glassmorphic-card .contentBox p {
+	font-size: 1em;
+	color: #fff;
+	font-weight: 300;
+}
+.container-02 .glassmorphic-card .contentBox a {
+	position: relative;
+	display: inline-block;
+	padding: 8px 20px;
+	margin-top: 15px;
+	background: #fff;
+	border-top: 1px solid rgba(255,255,255,0.1);
+	border-left: 1px solid rgba(255,255,255,0.1);
+	color: #000;
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: 500;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.container-02 p {
+	z-index: 12;
+	margin: 20px auto 10px;
+	position: relative;
+	color: #fff;
+}
+.container-02 p span {
+	font-weight: 700;
+}
